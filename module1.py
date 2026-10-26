@@ -40,7 +40,7 @@ openfile = input("would you like to access the file y/n: ").lower()
 if openfile == "y":
     checkusername = input("Username: ") 
     checkpassword = input("Password: ") 
-    if checkusername == userusername or checkpassword == userpassword:
+    if checkusername == userusername and checkpassword == userpassword:
         with open("thetextdocument.txt", "w") as file: 
             file.write("you have entered, well done") 
         print("File tickled successfully...go have a look...") 
